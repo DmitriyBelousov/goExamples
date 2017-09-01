@@ -9,8 +9,8 @@ import (
 func main(){
 	wg := new(sync.WaitGroup)
 
-	//go  showString("bla")
-	//go  showString("gogo")
+	 // go showString("bla")
+	 //go showString("gogo")
 
 	for i:=0; i < 10; i++{
 		go showString2("ttt", wg)

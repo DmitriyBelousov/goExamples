@@ -45,26 +45,27 @@ func main() {
 	//fmt.Println(string(res2B))
 
 //простые данные
-	//bolB, _ := json.Marshal(true)
-	//fmt.Println(bolB)
-	//
-	//intB, _ := json.Marshal(1)
-	//fmt.Println(string(intB))
-	//
-	//fltB, _ := json.Marshal(2.34)
-	//fmt.Println(string(fltB))
-	//
-	//strB, _ := json.Marshal("gopher")
-	//fmt.Println(string(strB))
-	//
-	//slcD := []string{"apple", "peach", "pear"}
-	//fmt.Println(slcD)
-	//slcB, _ := json.Marshal(slcD)
-	//fmt.Println(string(slcB))
-	//
-	//mapD := map[string]int{"apple": 5, "lettuce": 7}
-	//mapB, _ := json.Marshal(mapD)
-	//fmt.Println(string(mapB))
+//	bolB, _ := json.Marshal(true)
+//	fmt.Println(bolB)
+//	fmt.Println(string(bolB))
+//
+//	intB, _ := json.Marshal(1)
+//	fmt.Println(string(intB))
+//
+//	fltB, _ := json.Marshal(2.34)
+//	fmt.Println(string(fltB))
+//
+//	strB, _ := json.Marshal("gopher")
+//	fmt.Println(string(strB))
+//
+//	slcD := []string{"apple", "peach", "pear"}
+//	fmt.Println(slcD)
+//	slcB, _ := json.Marshal(slcD)
+//	fmt.Println(string(slcB))
+//
+//	mapD := map[string]int{"apple": 5, "lettuce": 7}
+//	mapB, _ := json.Marshal(mapD)
+//	fmt.Println(string(mapB))
 
 }
 

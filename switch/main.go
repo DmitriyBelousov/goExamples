@@ -30,16 +30,16 @@ func main(){
 	switchEx("testfile.gz")
 	switchEx2("blabla.zip")
 
-	i := 2
-	fmt.Print("Write ", i, " as ")
-	switch i {
-	case 1:
-		fmt.Println("one")
-	case 2:
-		fmt.Println("two")
-	case 3:
-		fmt.Println("three")
-	}
+	//i := 2
+	//fmt.Print("Write ", i, " as ")
+	//switch i {
+	//case 1:
+	//	fmt.Println("one")
+	//case 2:
+	//	fmt.Println("two")
+	//case 3:
+	//	fmt.Println("three")
+	//}
 
 }
 
@@ -79,9 +79,6 @@ func switchEx2(file string){
 		ZipFileList()
 	}
 }
-
-
-
 func Suffix(file string) string {
 	file = strings.ToLower(filepath.Base(file))
 	if i := strings.LastIndex(file, "."); i > -1 {

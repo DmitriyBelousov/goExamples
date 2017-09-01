@@ -11,7 +11,7 @@ type Producer struct{
 }
 
 func (p *Producer) produce(){
-	for{
+	for i:=0; i<5; i++{
 		time.Sleep(1 * time.Second)
 		p.OutChan <- rand.Int()
 	}
@@ -19,14 +19,14 @@ func (p *Producer) produce(){
 
 func main(){
 
-	//intChan := make(chan int,10)
+	//intChan := make(chan int)
 	//intChan <- 1
 	//fmt.Println(<-intChan)
 	readChan := make(chan int)
 	prod := Producer{readChan}
 	go prod.produce()
 	for{
-		i:= <-readChan
+		i:= <-prod.OutChan
 		fmt.Println("Message from chan", i)
 	}
 

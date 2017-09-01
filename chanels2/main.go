@@ -25,14 +25,16 @@ func main(){
 
 	prod := Producer{make(chan int)}
 	go prod.produce()
-	for i:= range prod.getOutChan(){
+	//for i:= range prod.getOutChan(){
+	//	fmt.Println("Message from chan", i)
+	//	prod.getOutChan() <- 3
+	//
+	//}
+	for{
+		i:= <- prod.getOutChan()
 		fmt.Println("Message from chan", i)
-		//prod.getOutChan() <- 3
+		prod.getOutChan() <- 3
 
 	}
-	//for{
-	//	i:= <- prod.getOutChan()
-	//	fmt.Println("Message from chan", i)
-	//}
 
 }

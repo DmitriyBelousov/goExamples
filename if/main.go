@@ -1,23 +1,20 @@
+//
+//if необязательнаяИнструкция1; логическоеВыражение1 {
+// блок1
+//} else if необязательнаяИнструкция2; логическоеВыражение2 {
+// блок2
+//} else {
+// блок3
+//}
+package main
 
-if необязательнаяИнструкция1; логическоеВыражение1 {
- блок1
-} else if необязательнаяИнструкция2; логическоеВыражение2 {
- блок2
-} else {
- блок3
-}
+import (
+	"fmt"
 
-func main() {
-    a, b := 4, 5
-    if a < b {
-        fmt.Println("a is less than b")
-    } else if a > b {
-        fmt.Println("a is greater than b")
-    } else {
-        fmt.Println("a is equal to b")
-    } 
-}
-
+	"errors"
+	"strings"
+	"path/filepath"
+)
 
 func main() {
     
@@ -27,18 +24,20 @@ func main() {
         fmt.Println("a is greater than b")
     } else {
         fmt.Println("a is equal to b")
-    } 
+    }
+
+	ArchiveFileList("myFile.tar")
 }
 
 
 
 func ArchiveFileList(file string) ([]string, error) {
 	if suffix := Suffix(file); suffix == ".gz" {
-		return GzipFileList(file)
+		GzipFileList(file)
 	} else if suffix == ".tar" || suffix == ".tar.gz" || suffix == ".tgz" {
-		return TarFileList(file)
+		TarFileList(file)
 	} else if suffix == ".zip" {
-		return ZipFileList(file)
+		ZipFileList(file)
 	}
 	return nil, errors.New("unrecognized archive")
 }
@@ -54,4 +53,14 @@ func Suffix(file string) string {
 	return file[i:]
 	}
 	return file
+}
+
+func GzipFileList(fileName string){
+	fmt.Println(".gz")
+}
+func TarFileList(fileName string){
+	fmt.Println(".tar")
+}
+func ZipFileList(fileName string){
+	fmt.Println(".zip")
 }

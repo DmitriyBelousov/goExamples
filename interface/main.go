@@ -50,12 +50,12 @@ func saySomething(s Speaker) {
 }
 
 
-/// инткрфейс встроенный в интерфейс
+/// интерфейс, встроенный в интерфейс
 
-//type Informater interface {
-//	Speaker
-//	howOld()
-//}
+type Informater interface {
+	Speaker
+	howOld()
+}
 
 func getInfo(p person, sa secretAgent){
 	saySomething(p)

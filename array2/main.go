@@ -22,6 +22,7 @@ func main(){
 	fmt.Println(second[2])
 
 	copyOfThird := third
+	//copyOfThird := &third
 	copyOfThird[1] = 23
 	copyOfThird[2] = 55
 	fmt.Println(third)

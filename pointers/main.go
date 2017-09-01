@@ -10,23 +10,38 @@ type Man struct{
 
 func main(){
 
-	x := 15
-	fmt.Println(x, &x )
-
+	//x := 15
+	//fmt.Println(x, &x )
+	//
 	//y := &x
 	//fmt.Println(y)
 	//
 	//z := &y
+	//fmt.Println(z)
 	//fmt.Println(*z)
+	//
+	//fmt.Println("-------------------")
 
-	slice := []int{1,2,3,4,5}
-	fmt.Println(slice)
-	change2(slice)
-	fmt.Println(slice)
 
-	modifySlice := change(slice)
-	fmt.Println(modifySlice)
-	fmt.Println("-------------------")
+	//i := 1
+	//fmt.Println(i)
+	//setZero(i)
+	//fmt.Println(i)
+	//
+	//zeroPointer(&i)
+	//fmt.Println(i)
+	//
+	//fmt.Println("-------------------")
+
+	//slice := []int{1,2,3,4,5}
+	//fmt.Println(slice)
+	//change2(slice)
+	//fmt.Println(slice)
+	//
+	//modifySlice := change(slice)
+	//fmt.Println(modifySlice)
+	//
+	//fmt.Println("-------------------")
 
 	man1 := Man{ "Bob", 23}
 	fmt.Println(man1)
@@ -37,13 +52,7 @@ func main(){
 	changeStruct2(&man1)
 	fmt.Println(man1)
 
-	//i := 1
-	//fmt.Println(i)
-	//setZero(i)
-	//fmt.Println(i)
-	//
-	//zeroPointer(&i)
-	//fmt.Println(i)
+
 
 }
 
@@ -56,7 +65,7 @@ func zeroPointer(val *int){
 }
 
 func change(ar []int)[]int{
-	ar[0] = 99
+	ar[0] = 33
 	return ar
 }
 
@@ -69,5 +78,5 @@ func changeStruct(man Man){
 }
 
 func changeStruct2(man *Man){
-	man.Name = "blabla"
+	man.Name = "Zigfrid"
 }

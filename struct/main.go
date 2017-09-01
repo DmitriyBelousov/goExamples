@@ -27,15 +27,17 @@ func main(){
 	man3.bDay()
 	fmt.Println(man3)
 
-	//man4 := &man3
-	//man4.Age = 100
-	//fmt.Println("man4 - ", *man4)
-	//fmt.Println("man3 - " ,man3)
+	fmt.Println("------------------------------")
 
-	//
-	//emp := new(Employee)
-	//emp.Person.bDay()
-	//fmt.Println(*emp)
+	man4 := &man3
+	man4.Age = 100
+	fmt.Println("man4 - ", *man4)
+	fmt.Println("man3 - " ,man3)
+
+
+	emp := new(Employee)
+	emp.Person.bDay()
+	fmt.Println(*emp)
 
 }
 

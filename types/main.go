@@ -5,7 +5,7 @@ bool
 string
 
 int  int8  int16  int32  int64
-uint uint8 uint16 uint32 uint64 uintptr
+uint uint8 uint16 uint32 uint64
 
 byte
 
@@ -15,6 +15,8 @@ float32 float64
 
 complex64 complex128
 
+x := 1
+x :=3
 
 const limit = 512
 const top uint16 = 1421
